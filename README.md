@@ -25,19 +25,17 @@ sklearn
 * Results achieved by QNNs with Hardware-efficient ansatz under the noisy setting
   ```shell
   cd noise_QNN
-  python main_alg.py    # train QNN with depolarization noise
+  python main_alg.py  --noise # train QNN with depolarization noise
   ```
  
 * Baseline results achieved by DNNs
   ```shell
   cd DNN_baseline
-  python train_search.py
-  python train_search.py --noise    # search ansatz with noise
-  python train_search.py --searcher 'evolution' # train QAS and utilize evolutionary algorithms at the ranking state 
+  python main_alg.py  # train DNN 
   ```
 ---
 ## Experiment results
-* Quantum Machine Learning
+* Learning performance on MNIST dataset
 
 ![](assests/All_sim.png)
 
